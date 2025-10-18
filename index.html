@@ -477,8 +477,110 @@ problem to walk away with the perfect and creative solution.</p>
             </li>
             </ul>
 </div>
+<div class="footer-end">
+  <p class="footer-end-text">Subscribe</p>
+<form classe="footer-form" name="subscribe-form">
+  <label class="footer-form-label" for="input-name">
+    <input
+    class="footer-form-input"
+    name="input-imail"
+    id="input-name"
+    tupe="email"
+    placeholder="E-mail"
+    autofocus
+    />
+    
+  </label>
+    <button class="footer-form-btn" type="submit">
+      Subscribe
+      <svg class="btn-icon" width="24" height="24">
+        <use href="./images/icons.svg#icon-Frame"></use>
+      </svg>
+    </button>
+  
+</form>
+</div>
     </div>
     </footer>
+    
+    <!--Modal Window-->
+    <div class="backdrop is-open">
+      <div class="modal">
+      <button class="modal-btn" type="buton">
+        <svg class="madal-btn-icon" width="8" height="8">
+          <use href=".images/icon.svg#close"></use>
+        </svg>
+      </button>
+      <p class="modal-caption"> Leave your contacts and we will call you back</p>
+      <form class="madal-form" name="review" >
+        <div class="modal-form-field">
+         <label class="modal-form-label" for="user-name">Name</label>
+         <div class="modal-form-wrapper">
+<input class="modal-form-input"
+type="text"
+id="user-name"/>
+<svg class="madal-form-icon" width="8" height="8">
+  <use href=".images/icon.svg#icon-close"></use>
+</svg>
+         </div>
+         </div>
+        
+          <div class="modal-form-field">
+            <label class="modal-form-label" for="user-email">Email</label>
+            <div class="modal-form-wrapper">
+              <input class="modal-form-input"
+              type="email"
+              id="user-email"/>
+              <svg class="modal-form-icon" width="8" height="8">
+                <use href=".images/icon.svg#icon-email"></use>"
+              </svg>
+            </div>
+            <div class="modal-form-field">
+              <label class="modal-form-label" for="user-phone">Phone numder</label>
+              <div class="modal-form-wrapper">
+              <input class="modal-form-input"
+              type="tel"
+              id="user-phone"
+              name="user-phone"
+              />
+              <svg class="modal-form-icon" width="8" height="8">
+                <use href=".images/icon.svg#icon-phone"></use>"
+              </svg>
+            </div>
+            </div>
+            <div class="modal-form-field">
+              <label class="modal-form-label" for="user-comment">Comment</label>
+              <textarea 
+              class="modal-form-massage"
+              id="user-comment"
+              name="user-comment"
+              rows="4"
+              placeholder="Enter text"
+              ></textarea>
+            </div>
+          <div class="form-agreement">
+            <input type="checkbox visaul-hidden"
+            name="user-agreement" id="user-agreement"
+            />
+            <label class="agreement-wrapper"
+            for="user-agreement">
+              <span class="agreemnt-checkbox">
+                <svg class="agreemnt-checkbox-icon"
+                width="16" height="16">
+                <use href=".images/icon.svg#checkmark"></use>
+              </svg>
+              </span>
+              I accept the terms and conditions of the 
+              <a class="agreement-link
+              accent-text" href="./index html"
+              target="blank"
+              >Privacy Policy</a>
+            </label>
+          </div>
+            <button class="btn-accent" type="submit">Send</button>
+      </form>
+    </div>
+  </div>
 </body>
 </html>                    
       
