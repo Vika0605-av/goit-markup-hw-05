@@ -511,7 +511,7 @@ text-decoration: none;
   color: #fff;
   border: none;
   letter-spacing: 0.04em;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px rgba( 0, 0, 0, 0.15);
 
 }
 .footer-form {
@@ -556,8 +556,7 @@ text-decoration: none;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    transition: opasity 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* Modal */
 .backdrop.is-open {
@@ -572,13 +571,14 @@ text-decoration: none;
     left: 50%;
     width: 408px;
     min-height: 584px;
+    padding: 72px 24px 24px 24px;
     border-radius: 4px;
     box-shadow: 0 1px 1px 0 rgba( 0, 0, 0, 0.14), 0 1px 1px 0 rgba( 0, 0, 0, 0.02);
-    background-color: #fcfcfc;
+    background: #fcfcfc;
     transform: translate(-50%, -50%);
    background-color: rgba( 46, 47, 66, 0.4);
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1); 
-    box-shadow: зі значенням 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0px 1px 1px rgba( 0, 0, 0, 0.14), 0px 1px 3px rgba( 0, 0, 0, 0.12), 0px 2px 1px rgba( 0, 0, 0, 0.2);
 }
 .backdrop:not(is-open).modal {
     transform: translate(-50%, -50%) scale(1.5);
@@ -599,17 +599,19 @@ text-decoration: none;
         transition: 250ms ease-in;
         border-radius: 50%;
         background-color: #e7e9fc;
-        border: 1px solid rgba(0, 0, 0, 0.1); 
+        border: 1px solid rgba( 0, 0, 0, 0.1); 
         cursor: pointer;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 .modal-btn:hover,
 .modal-btn:focus {
-    color: #4d5ae5;
-    background-color: #404bbf; 
+    background-color: #404BBF;
+    border-color: transparent; 
+    border: none;
 }
     .modal-btn-icon {
         fill: currentColor;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     .modal-caption {
         max-width: 360px;
@@ -641,6 +643,11 @@ text-decoration: none;
     top: 50%; 
     transform: translateY(-50%); 
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+}
+.modal-btn:hover .modal-btn-icon,
+.modal-btn:focus . .modal-btn-icon {
+    fill: #ffffff
 }
 .modal-form-wrapper {
   position: relative;
@@ -680,29 +687,33 @@ padding-left: 38px;
 .modal-form-comment {
     margin-bottom: 16px;
 }
-.modal-form-message {
+.modal-form-massage {
   width: 100%;
   height: 120px;
-  padding: 22px 24px;
-
-  font-size: 18px;
-  letter-spacing: -0.02em;
-
+  padding: 8px 16px;
+line-height: 1.17;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+color: rgba( 46, 47, 66, 0.4); 
   outline: transparent;
-  border-radius: 13px;
-  border: 1.5px solid rgba( 17, 17, 17, 0.05);
+  border-radius: 4px;
+  border: 1px solid rgba( 46, 47, 66, 0.4); 
   resize: none;
-  transition: border-color 250ms ease;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: transparent;
 }
-.modal-form-message::placeholder {
+.modal-form-massage:focus {
+    border-color: #4D5AE5;
+}
+.modal-form-massage::placeholder {
   color: rgba( 64, 64, 64, 0.3);
 }
 .form-agreement {
-    margin-bottom: 40px;
+    margin-bottom: 24px;
 }
 .agreement-wrapper {
     letter-spacing: 0.4em;
-    color: rgba( 64, 64, 64, 0.6);
+    color: #8e8f99;
 }
 .agreemnt-checkbox {
     display: inline-flex;
@@ -712,11 +723,10 @@ padding-left: 38px;
     height: 16px;
     margin-right: 8px;
     border-radius: 2px;
-    border: 1px solid rgba( 17, 17, 17, 0.14);
-    transition: 250ms ease-in;
-    transition-property: border-color, backgraund-color;
+    border: 1px solid rgba( 46, 47, 66, 0.4);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
-
+    fill: transparent;
 }
 .agreemnt-checkbox-icon {
 transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);}
@@ -734,18 +744,17 @@ color: #2e2f42;
     text-underline-position: from-font;
 }
 .btn-accent {
-    margin: 0 auto;
-    border-radius: 4px;
+    
     display: block;
     border: none;
     height: 56px;
     min-width:169px;
-    padding: 16px 32px;
-    background-color: #4d5ae5;
     line-height: 1,5;
     letter-spacing: 0.04em;
-    gap: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
     color: #fff;
     cursor: pointer;
-    transition: background-color 250ms cubic-bezier(0.4, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
