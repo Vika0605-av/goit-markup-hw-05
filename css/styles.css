@@ -488,7 +488,7 @@ text-decoration: none;
 
 }
 .footer-end {
-    margin-left: auto;
+    margin-left:auto;
 }
 .footer-end-text {
     font-weight: 500;
@@ -507,11 +507,11 @@ text-decoration: none;
   padding-left: 16px;
   line-height: 2;
   background-color: transparent;
-  border: 1px solid #ffffff;
   color: #fff;
   border: none;
   letter-spacing: 0.04em;
   box-shadow: 0px 4px 4px rgba( 0, 0, 0, 0.15);
+  border: 1px solid #ffffff;
 
 }
 .footer-form {
@@ -569,14 +569,14 @@ text-decoration: none;
     position: absolute;
     top: 50%;
     left: 50%;
+    padding: 72px 24px 24px;
     width: 408px;
     min-height: 584px;
-    padding: 72px 24px 24px 24px;
     border-radius: 4px;
     box-shadow: 0 1px 1px 0 rgba( 0, 0, 0, 0.14), 0 1px 1px 0 rgba( 0, 0, 0, 0.02);
     background: #fcfcfc;
     transform: translate(-50%, -50%);
-   background-color: rgba( 46, 47, 66, 0.4);
+    background-color: rgba( 46, 47, 66, 0.4);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0px 1px 1px rgba( 0, 0, 0, 0.14), 0px 1px 3px rgba( 0, 0, 0, 0.12), 0px 2px 1px rgba( 0, 0, 0, 0.2);
 }
@@ -626,7 +626,7 @@ text-decoration: none;
         color: #2e2f42;
     }
 .modal-form-field {
-  margin-bottom: 8px
+  margin-bottom: 16px 
 }
 .modal-form-label {
   display: block;
@@ -637,10 +637,11 @@ text-decoration: none;
   color: #8e8f99;
 
 }
-.madal-form-icon {
+.modal-form-icon {
     position: absolute;
     left: 16px;
     top: 50%; 
+    fill: #4D5AE5; 
     transform: translateY(-50%); 
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
@@ -656,7 +657,6 @@ text-decoration: none;
   display: block;
   width: 100%;
   height: 40px;
-  /*padding: 22px 62px;*/
   border-radius: 4px;
 background-color: transparent;
 padding-left: 38px;
@@ -712,8 +712,15 @@ color: rgba( 46, 47, 66, 0.4);
     margin-bottom: 24px;
 }
 .agreement-wrapper {
-    letter-spacing: 0.4em;
+    font-size: 12px;
+    line-height: 1.17; 
+    letter-spacing: 0.04em; 
     color: #8e8f99;
+}
+.checkbox-input:checked + .agreement-wrapper  > .cheagreemnt-checkbox {
+background-color: #404bbf; 
+border: none;
+fill:#F4F4FD;
 }
 .agreemnt-checkbox {
     display: inline-flex;
@@ -742,14 +749,15 @@ color: #2e2f42;
     text-decoration-skip-ink:none ;
     text-decoration-thickness: auto;
     text-underline-position: from-font;
+    color:#4d5ae5;
 }
 .btn-accent {
-    
+    background-color: #4D5AE5;
     display: block;
     border: none;
     height: 56px;
     min-width:169px;
-    line-height: 1,5;
+    line-height: 1.5;
     letter-spacing: 0.04em;
     font-size: 16px;
     font-weight: 500;
