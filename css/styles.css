@@ -524,10 +524,8 @@ text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 24px;
     min-width: 165px;
     height: 40px;
-    gap: 16px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
@@ -545,6 +543,7 @@ text-decoration: none;
 }
 .btn-icon {
     margin-left: 16px;
+    fill: #fff;
 }
 .backdrop {
     position: fixed;
@@ -563,8 +562,8 @@ text-decoration: none;
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
-    z-index: 2;
-}
+   
+} 
 .modal {
     position: absolute;
     top: 50%;
@@ -594,7 +593,7 @@ text-decoration: none;
         padding: 0;
         border: none;
         background-color: transparent;
-        color: #404bbf;
+        color: #111111;
         transition: 250ms ease-in;
         border-radius: 50%;
         background-color: #e7e9fc;
@@ -642,7 +641,7 @@ text-decoration: none;
     position: absolute;
     left: 16px;
     top: 50%; 
-    fill: #4D5AE5; 
+    fill: #ffffff;
     transform: translateY(-50%); 
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -677,15 +676,7 @@ padding-left: 38px;
   border-color: #4d5ae5;
   fill: #4d5ae5;
 }
- /*.modal-form-icon {
-  position: absolute;
-  top: 50%;
-  left: 16px;
-  transform: translateY(-50%);
-  fill: #4D5AE5; 
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  pointer-events: none;
-} */
+
 .modal-form-input:focus + .modal-form-icon {
   fill: #4d5ae5;
 }
@@ -765,6 +756,7 @@ color: #2e2f42;
 .btn-accent {
     background-color: #4D5AE5;
     display: block;
+    margin: 0 auto;
     border: none;
     height: 56px;
     min-width:169px;
@@ -772,6 +764,7 @@ color: #2e2f42;
     letter-spacing: 0.04em;
     font-size: 16px;
     font-weight: 500;
+    border-radius: 4%;
     font-family: "Roboto", sans-serif;
     color: #fff;
     cursor: pointer;
