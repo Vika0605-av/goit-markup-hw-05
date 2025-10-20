@@ -650,7 +650,7 @@ text-decoration: none;
 }
 .modal-btn:hover .modal-btn-icon,
 .modal-btn:focus .modal-btn-icon {
-    fill: #ffffff
+    fill: #ffffff;
 }
 .modal-form-wrapper {
   position: relative;
