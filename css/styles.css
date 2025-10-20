@@ -527,19 +527,19 @@ text-decoration: none;
     min-width: 165px;
     height: 40px;
     font-weight: 500;
-    line-height: 1.5;
+    line-height: 1.5;  
     letter-spacing: 0.04em;
     border: none;
     border-radius: 4px;
     background-color: #4d5ae5;
     color: #ffffff;
     cursor: pointer;
+     transition:  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 
 }
 .footer-form-btn:hover,
 .footer-form-btn:focus {
     background-color: #4d5ae5;
-
 }
 .btn-icon {
     margin-left: 16px;
@@ -561,7 +561,7 @@ text-decoration: none;
 .backdrop.is-open {
     opacity: 1;
     visibility: visible;
-    pointer-events: auto;
+    pointer-events: auto;  
    
 } 
 .modal {
@@ -573,7 +573,6 @@ text-decoration: none;
     min-height: 584px;
     border-radius: 4px;
     background: #fcfcfc; 
-    opacity: 0;
     transform: translate(-50%, -50%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0px 1px 1px rgba( 0, 0, 0, 0.14), 0px 1px 3px rgba( 0, 0, 0, 0.12), 0px 2px 1px rgba( 0, 0, 0, 0.2);
@@ -606,7 +605,8 @@ text-decoration: none;
     background-color: #404BBF;
     border-color: transparent; 
     border: none;
-    fill: #ffffff
+    fill: #ffffff ;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
     .modal-btn-icon {
         fill: currentColor;
@@ -769,4 +769,9 @@ color: #2e2f42;
     color: #fff;
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+}
+.btn-accent:hover,
+.btn-accent:focus {
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
